@@ -1,0 +1,390 @@
+<html>
+
+<head>
+<link href="https://fonts.googleapis.com/css?family=Original+Surfer" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link rel="shortcut icon" type="image/png" href="https://poinsettiagroves.com/wp-content/uploads/2018/05/fruit_gifts.png"/>
+
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script>
+function fadeInPage() {
+if (!window.AnimationEvent) { return; }
+ var fader = document.getElementById('fader');
+    fader.classList.add('fade-out');
+}
+</script>
+
+<title>Sports of Florida</title>
+
+<style>
+#fader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+	pointer-events: none;
+    background: white;
+	animation-duration: 300ms;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes fade-out {
+    from { opacity: 1 }
+      to { opacity: 0 }
+}
+
+@keyframes fade-in {
+    from { opacity: 0 }
+      to { opacity: 1 }
+}
+
+#fader.fade-out {
+    opacity: 0;
+    animation-name: fade-out;
+}
+
+#fader.fade-in {
+    opacity: 1;
+    animation-name: fade-in;
+}
+
+::selection {
+  color: blue;
+  background: white;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px white; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: royalblue; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: royalblue; 
+}
+
+.content {
+  background-color: lightblue;
+  border: 25px dashed blue;
+  padding: 25px;
+  margin: 25px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("http://hashtag-bg.com/wp-content/uploads/2018/08/water-animated-gif-background-resume-coding-gif-on-gifer-by-munidar.gif");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.florida {
+  margin: 50px auto;
+	text-align: center;
+	text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
+	color: #333;
+	opacity: 0.4;
+	font: 700 80px 'Bitter';
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+	line-height: 1.618;
+	background-color: #66ccff;
+}
+
+h1,
+h2 {
+	font-family: 'Playfair Display', serif;
+	line-height: 1.2;
+	margin-bottom: 1rem;
+	letter-spacing: 1px;
+}
+
+h1 {
+	font-size: 3rem;
+	text-align: center;
+}
+
+h2 {
+	font-size: 2.5rem;
+}
+
+#test body {
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+    -webkit-transition: opacity 2s ease-in;
+    transition: opacity 2s ease-in;
+}​
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  text-align: right;
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+  color: #fff;
+  transition: all 1.5s;
+}
+
+.nav > * {
+    -webkit-transform: translateZ(0);
+}
+
+#nav-logo {
+	margin-left: 24px;
+  float: left;
+	height: 100%;
+	width: auto;
+	font-size: 14px;
+}
+#nav-logo img {
+	padding-top: 8px;
+	padding-bottom: 8px;
+	float: left;
+	background-color: transparent;
+	height: 55%;
+}
+#nav-logo p {
+	float: left;
+	margin-left: 15px;
+  margin-top: 0;
+}
+
+#menu {
+  margin: 0 30px 0 0;  
+}
+
+#menu a {
+  font-size: 12px;
+  position: relative;
+  clear: right;
+  text-decoration: none;
+  color: #fff;
+  margin: 0 5px;
+  line-height: 50px;
+  animation-duration: 1s;
+}
+
+#menu a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -3px;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+#menu a:hover:after {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+#menu-label {
+  margin: 0 15px 0 0;
+  font size: 26px;
+  line-height: 50px;
+  display: none;
+  width: 26px;
+  float: right;
+}
+
+#menu-label i {
+  font-size: 25px;
+  line-height: 50px;
+}
+
+#toggle {
+  display: none;
+}
+
+@media only screen and (max-width: 750px){
+  #nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #212121;
+  }
+  
+  #menu-label {
+    display: block;
+    cursor: pointer;
+  }
+  
+  #menu {
+    text-align: left;
+    width: 100%;
+    display: none;
+  }
+  
+  #menu a {
+    display: block;
+    margin: 0;
+    padding-left: 20px;
+  }
+  
+  #toggle:checked + #menu {
+    display: block;
+    background-color: #212121;
+  }
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content2 {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<svg id="fader"></svg>
+        <script>
+            fadeInPage();
+        </script>
+
+<div class="header-image"><center><img src="https://www.oshaeducationcenter.com/images/state-florida.png" width="300" height="300"></center>
+<h1 class="florida">FLORIDA</h1></center></div>
+
+  <div id =  "nav" class = "color-transparent">
+    <div id = "nav-logo">
+      <img src = "https://flworkcomp.com/wp-content/uploads/2015/04/Florida-Preferred-Insurance-icon-150x150.png" style = "height: 60px"></img>
+      <p>FLORIDA VACATION</p>
+    </div>
+    <label id = "menu-label" for = "toggle">
+      <i class="material-icons">menu</i>
+    </label>
+    <input type = "checkbox" id = "toggle"/>
+    <div id = "menu">
+      <a href = "Home.html">HOME</a>
+      <a href = "Environment.html">Environment</a>
+      <a href = "History.html">History</a>
+      <a href = "Landmarks.html">Landmarks</a>
+      <a href = "Laws.html">Laws</a>
+      <a href = "Recreation.html">Recreation</a>
+      <a href = "Sports.html">Sports</a>
+    </div>
+  </div>
+
+<div class="content">
+
+<button class="collapsible">American Football</button>
+<div class="content2">
+Miami's first entry into the American Football League was the Miami Dolphins, which competed in the fourth AFL league from 1966 to 1969. In 1970 the Dolphins joined the National Football League when the AFL–NFL merger occurred. The team made its first Super Bowl appearance in Super Bowl VI, but lost to the Dallas Cowboys. The following year, the Dolphins completed the NFL's only perfect season culminating in a Super Bowl win. The 1972 Dolphins were the third NFL team to accomplish a perfect regular season, and won Super Bowl VIII, Miami also appeared in Super Bowl XVII and Super Bowl XIX, losing both games.
+<br/><br/>
+The Tampa Bay Buccaneers began in 1976 as an expansion team of the NFL. They struggled at first, losing their first 26 games in a row to set a league record for futility. After a brief taste of success in the late 1970s, the Bucs again returned to their losing ways, and at one point lost 10+ games for 12 seasons in a row. The hiring of Tony Dungy in 1996 started an improving trend that eventually led to the team's victory in Super Bowl XXXVII in 2003 under coach Jon Gruden. Tampa has hosted four Super Bowls: Super Bowl XVIII (1984), Super Bowl XXV (1991), Super Bowl XXXV (2001), and Super Bowl XLIII (2009). The first two events were held at Tampa Stadium, and the other two at Raymond James Stadium.
+<br/><br/>
+The Jacksonville Jaguars joined the NFL as an expansion team in the 1995 season; they play their home games at EverBank Field. In 2005, Jacksonville hosted Super Bowl XXXIX.
+<br/><br/>
+The World Football League featured the Florida Blazers, Jacksonville Sharks and Jacksonville Express, whereas the United States Football League included the Tampa Bay Bandits, Jacksonville Bulls and Orlando Renegades. The Orlando Rage played in the XFL in 2001, and the Orlando Apollos play in the Alliance of American Football since 2019.
+<br/><br/>
+The Orange Bowl is a major college football bowl, held at the Miami metropolitan area since 1935, currently as a member of the College Football Playoff. The Miami metro area has hosted the Super Bowl a total of ten times (five Super Bowls at the Hard Rock Stadium, including Super Bowl XLI and five at the Miami Orange Bowl), tying New Orleans for the most games.[citation needed]
+<br/><br/>
+Camping World Stadium (the former Citrus Bowl stadium) hosts three annual college football bowl games: the Citrus Bowl since 1947, the Camping World Bowl since 2001, and the Cure Bowl since 2015.
+<br/><br/>
+Jacksonville hosts the Florida–Georgia game, an annual college football game between the University of Florida and the University of Georgia since 1933, as well as the Gator Bowl, a post-season college bowl game since 1946.
+</div>
+
+<button class="collapsible">Baseball</button>
+<div class="content2">
+The Miami Marlins of Major League Baseball began play in the 1993 season. They won the World Series in both seasons they qualified for the postseason, doing so in 1997 and 2003.
+<br/><br/>
+The Tampa Bay Rays began playing in 1998 at Tropicana Field in St. Petersburg. After a decade of futility, the Rays won the 2008 American League Pennant and made it to the World Series.
+<br/><br/>
+About half of all Major League Baseball teams conduct spring training in the state, with teams informally organized into the "Grapefruit League". Throughout MLB history, other teams have held spring training in Florida.
+<br/><br/>
+Several Major League baseball teams conduct spring training in the state, and most also operate minor league teams in the Class-A Florida State League.
+</div>
+
+<button class="collapsible">Basketball</button>
+<div class="content2">
+The Miami Heat of the National Basketball Association was formed in 1988 as an expansion team. They have won three league championships (in 2006, 2012 and 2013), plus five conference titles.
+<br/><br/>
+The Orlando Magic began playing in NBA in 1989 as an expansion franchise. They have won the Eastern Conference championships in 1995 and 2009.
+<br/><br/>
+Florida also had two WNBA teams: the Orlando Miracle (1999-2002) and Miami Sol (2000-2002).
+</div>
+
+<b>SOURCE:</b> <a href="https://en.wikipedia.org/wiki/Sports_in_Florida" target="_blank">Here</a>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+
+</html>
